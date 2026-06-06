@@ -4,69 +4,146 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TIKA Biodiversidad</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7f5;
+      color: #1f2d1f;
+    }
+
+    header {
+      background: #1f4d2e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #2e6b3f;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 12px 18px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background: #1f4d2e;
+    }
+
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(to bottom, #e8f5e9, #f4f7f5);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #1f4d2e;
+      border-left: 5px solid #2e6b3f;
+      padding-left: 10px;
+    }
+
+    footer {
+      background: #1f4d2e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .tagline {
+      font-style: italic;
+    }
+  </style>
 </head>
 
-<body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 40px; max-width: 900px;">
+<body>
 
+<header>
   <h1>🌿 TIKA</h1>
-  <h2>Transformando Investigación para Conservar los Andes</h2>
-  <h3>Ciencia para todos</h3>
+  <p>Transformando Investigación para Conservar los Andes</p>
+  <p class="tagline">Ciencia para todos</p>
+</header>
 
-  <p><strong>Las plantas sostienen la vida. Conocerlas es el primer paso para conservarlas.</strong></p>
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#programas">Programas</a>
+  <a href="#proyectos">Proyectos</a>
+  <a href="#ideas">Ideas futuras</a>
+</nav>
 
-  <hr>
+<div class="hero" id="inicio">
+  <h2>Las plantas sostienen la vida</h2>
+  <p>Conocerlas es el primer paso para conservarlas.</p>
+</div>
 
-  <h2>📌 ¿Quiénes somos?</h2>
+<div class="container">
+
+<section id="nosotros">
+  <h2>¿Quiénes somos?</h2>
   <p>
-    TIKA es una organización dedicada a promover el conocimiento, la conservación y la valoración de las plantas y ecosistemas andinos.
-    Creemos que la ciencia debe ser accesible para todos.
+    TIKA es una organización dedicada a la investigación, educación y conservación de los ecosistemas andinos.
+    Promovemos una ciencia accesible para todos.
   </p>
+</section>
 
-  <h2>🎯 Misión</h2>
-  <p>
-    Impulsamos la investigación, la educación y la conservación de las plantas y ecosistemas andinos.
-  </p>
+<section>
+  <h2>Misión</h2>
+  <p>Impulsar la investigación, educación y conservación de la flora andina.</p>
 
-  <h2>👁️ Visión</h2>
-  <p>
-    Un futuro donde los Andes sean conocidos, valorados y conservados por toda la sociedad.
-  </p>
+  <h2>Visión</h2>
+  <p>Un futuro donde los Andes sean conocidos y conservados por toda la sociedad.</p>
+</section>
 
-  <h2>🌱 Pilares</h2>
-  <ul>
-    <li>Investigación botánica</li>
-    <li>Educación científica</li>
-    <li>Conservación de flora</li>
-    <li>Divulgación científica</li>
-    <li>Servicios científicos especializados</li>
-  </ul>
-
-  <h2>🔬 Programas</h2>
+<section id="programas">
+  <h2>Programas</h2>
   <ul>
     <li>Academia TIKA</li>
     <li>Exploraciones botánicas</li>
     <li>Conserva TIKA</li>
     <li>Biblioteca TIKA</li>
   </ul>
+</section>
 
-  <h2>📚 Proyectos prioritarios</h2>
+<section id="proyectos">
+  <h2>Proyectos prioritarios</h2>
   <ul>
-    <li>Conservación de Podocarpaceae Andinas</li>
+    <li>Podocarpaceae Andinas</li>
     <li>Flora amenazada de los Andes</li>
-    <li>Exploraciones botánicas</li>
     <li>Restauración ecológica</li>
   </ul>
+</section>
 
+<section id="ideas">
   <h2>💡 Ideas futuras</h2>
   <p>
-    Aquí se guardarán nuevas ideas: cursos, becas, proyectos, alianzas, publicaciones y programas de conservación.
+    Espacio para cursos, becas, alianzas, publicaciones y nuevos proyectos.
   </p>
+</section>
 
-  <hr>
+</div>
 
-  <p style="text-align:center;">
-    🌿 TIKA — Ciencia para todos
-  </p>
+<footer>
+  🌿 TIKA — Ciencia para todos
+</footer>
 
 </body>
 </html>
