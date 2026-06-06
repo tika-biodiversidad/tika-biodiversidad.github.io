@@ -13,19 +13,24 @@
     font-family: "Inter", sans-serif;
     background: #f7f9f7;
     color: #1b2b1b;
-    line-height: 1.6;
   }
 
+  /* HEADER */
   header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(16, 45, 28, 0.95);
+    background: rgba(16, 45, 28, 0.92);
     display: flex;
     justify-content: space-between;
-    padding: 14px 25px;
-    color: white;
+    align-items: center;
+    padding: 12px 25px;
     z-index: 1000;
+    backdrop-filter: blur(10px);
+  }
+
+  .logo img {
+    height: 40px;
   }
 
   nav a {
@@ -40,10 +45,11 @@
     opacity: 1;
   }
 
+  /* HERO CON FONDO */
   .hero {
     height: 95vh;
     background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-                url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+                url("background.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -56,11 +62,14 @@
 
   .hero h1 {
     font-size: 54px;
+    margin-bottom: 10px;
   }
 
   .hero p {
     max-width: 700px;
     margin: auto;
+    font-size: 18px;
+    opacity: 0.95;
   }
 
   .btn {
@@ -91,7 +100,7 @@
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
   }
 
@@ -102,12 +111,6 @@
     box-shadow: 0 4px 14px rgba(0,0,0,0.08);
   }
 
-  .lang {
-    text-align: right;
-    font-size: 13px;
-    margin-top: 10px;
-  }
-
   footer {
     background: #0f2a18;
     color: white;
@@ -115,20 +118,25 @@
     padding: 30px;
   }
 
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+  }
 </style>
 </head>
 
 <body>
 
 <header>
-  <div><strong>🌿<img src="logo.png" style="height:38px; filter: brightness(1.1);"> </strong></div>
+  <div class="logo">
+    <img src="logo.png" alt="TIKA Logo">
+  </div>
+
   <nav>
     <a href="#about">About</a>
     <a href="#mission">Mission</a>
-    <a href="#science">Science</a>
     <a href="#programs">Programs</a>
     <a href="#impact">Impact</a>
+    <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
@@ -138,82 +146,61 @@
   <h1>TIKA</h1>
   <p>Transforming Research into Conservation Action for Andean Biodiversity</p>
   <p><strong>Plants sustain life. Understanding them is the first step toward conservation.</strong></p>
-  <a class="btn" href="#about">Learn more</a>
+  <a class="btn" href="#about">Explore</a>
 </section>
 
 <div class="container">
 
-<!-- ABOUT -->
 <section id="about">
   <h2>About TIKA</h2>
   <p>
-    TIKA is a scientific initiative dedicated to the study, conservation, and dissemination of Andean biodiversity.
-    We integrate field research, taxonomy, education, and conservation action.
+    TIKA is a scientific initiative focused on the study, conservation, and education of Andean plant diversity.
   </p>
-
-  <div class="lang">
-    Versión en español disponible próximamente.
-  </div>
 </section>
 
-<!-- MISSION -->
 <section id="mission">
   <h2>Mission & Vision</h2>
-  <p><strong>Mission:</strong> Promote scientific research, education, and conservation of Andean ecosystems.</p>
-  <p><strong>Vision:</strong> A world where Andean biodiversity is fully understood and effectively protected.</p>
+  <p><strong>Mission:</strong> Promote research, education, and conservation of Andean ecosystems.</p>
+  <p><strong>Vision:</strong> A world where Andean biodiversity is fully understood and protected.</p>
 </section>
 
-<!-- SCIENCE -->
-<section id="science">
-  <h2>Scientific Approach</h2>
+<section id="programs">
+  <h2>Programs</h2>
   <div class="grid">
-    <div class="card">
-      <h3>Taxonomy</h3>
-      <p>Identification and classification of plant diversity.</p>
-    </div>
-    <div class="card">
-      <h3>Field Ecology</h3>
-      <p>Exploration and documentation of Andean ecosystems.</p>
-    </div>
-    <div class="card">
-      <h3>Conservation</h3>
-      <p>Evidence-based strategies for biodiversity protection.</p>
-    </div>
+    <div class="card"><h3>Academy TIKA</h3><p>Training in botany and conservation.</p></div>
+    <div class="card"><h3>Field Explorations</h3><p>Botanical expeditions in the Andes.</p></div>
+    <div class="card"><h3>Conservation</h3><p>Protection of threatened flora.</p></div>
+    <div class="card"><h3>Open Science</h3><p>Educational resources for all.</p></div>
   </div>
 </section>
 
-<!-- PROGRAMS -->
-<section id="programs">
-  <h2>Programs</h2>
-  <ul>
-    <li>Academy TIKA — scientific training</li>
-    <li>Field Explorations — biodiversity surveys</li>
-    <li>Conservation Program — restoration actions</li>
-    <li>Open Science Library — educational resources</li>
-  </ul>
-</section>
-
-<!-- IMPACT -->
 <section id="impact">
   <h2>Impact</h2>
   <div class="grid">
-    <div class="card"><h3>Research</h3><p>Field-based botanical studies in the Andes.</p></div>
-    <div class="card"><h3>Education</h3><p>Training students and professionals in plant science.</p></div>
-    <div class="card"><h3>Conservation</h3><p>Supporting protection of threatened ecosystems.</p></div>
+    <div class="card"><h3>Research</h3><p>Scientific studies in Andean flora.</p></div>
+    <div class="card"><h3>Education</h3><p>Training future botanists.</p></div>
+    <div class="card"><h3>Conservation</h3><p>Support for ecosystem protection.</p></div>
   </div>
 </section>
 
-<!-- CONTACT -->
+<section id="projects">
+  <h2>Key Projects</h2>
+  <ul>
+    <li>Podocarpaceae Conservation</li>
+    <li>High-Andean Flora Inventory</li>
+    <li>Ecological Restoration</li>
+  </ul>
+</section>
+
 <section id="contact">
   <h2>Contact</h2>
   <p>Email: tika.biodiversity@gmail.com</p>
-  <p>Collaboration inquiries welcome.</p>
 </section>
 
 </div>
 
 <footer>
-  🌿 TIKA — Science for the conservation of Andean biodiversity
+  🌿 TIKA — Science for conservation of the Andes
 </footer>
 
 </body>
