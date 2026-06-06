@@ -6,41 +6,139 @@
 <title>About TIKA</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="style.css">
 
 <style>
-/* pequeño ajuste extra solo para esta página */
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(10, 30, 18, 0.88);
+  backdrop-filter: blur(12px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* 🔥 LOGO MÁS PEQUEÑO */
+.logo img {
+  height: 70px;
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.75;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  opacity: 1;
+}
+
+/* CONTENIDO */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 120px 20px 80px 20px;
+  color: #1b2b1b;
+}
+
 h1 {
   font-size: 42px;
   margin-bottom: 10px;
+  color: #1f4d2e;
 }
 
-.hero-like {
-  padding: 20px 0 30px 0;
+h2 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #1f4d2e;
 }
 
-.hero-like p {
-  font-size: 18px;
+/* HERO INTRO */
+.intro-box {
+  padding: 35px 25px;
+  background: linear-gradient(to right, #f3f7f3, #ffffff);
+  border-radius: 16px;
+  margin-bottom: 30px;
+}
+
+/* SECCIONES */
+.section {
+  margin-top: 30px;
+  padding: 25px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* VALORES */
+.values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.value-card {
+  background: #f7f9f7;
+  padding: 12px;
+  border-radius: 10px;
+  border-left: 4px solid #2e7d32;
+}
+
+/* EQUIPO */
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  align-items: center;
+}
+
+.team img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.team-text {
+  font-size: 16px;
   line-height: 1.7;
 }
 
-.section {
-  margin-top: 40px;
-}
 </style>
 
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
   <div class="header-container">
 
     <div class="logo">
       <a href="index.html">
-        <img src="logo.png" alt="TIKA Logo">
+        <img src="logo.png" alt="TIKA logo">
       </a>
     </div>
 
@@ -55,11 +153,10 @@ h1 {
   </div>
 </header>
 
-<!-- CONTENIDO -->
 <div class="container">
 
 <!-- INTRO -->
-<div class="hero-like">
+<div class="intro-box">
 
 <h1>About TIKA</h1>
 
@@ -75,9 +172,7 @@ Plants sustain life and understanding them is the first step toward conservation
 
 </div>
 
-<hr>
-
-<!-- WHO WE ARE -->
+<!-- QUIÉNES SOMOS -->
 <div class="section">
 <h2>Who we are</h2>
 
@@ -87,66 +182,65 @@ We believe science must be accessible to everyone and that knowledge is a fundam
 </p>
 
 <p>
-Through scientific research, education, outreach, and technical services, we aim to bring botanical knowledge closer to students,
+Through scientific research, education, outreach, and technical services, we bring botanical knowledge closer to students,
 professionals, communities, and institutions, contributing to the conservation of the Andean natural heritage.
 </p>
 </div>
 
-<hr>
-
-<!-- MISSION -->
+<!-- MISIÓN -->
 <div class="section">
 <h2>Mission</h2>
-
 <p>
-To promote research, education, and conservation of Andean plants and ecosystems,
-bringing science closer to people and supporting biodiversity conservation.
+To promote research, education, and conservation of Andean plants and ecosystems, bringing science closer to people.
 </p>
 </div>
 
-<!-- VISION -->
+<!-- VISIÓN -->
 <div class="section">
 <h2>Vision</h2>
-
 <p>
 A future where Andean plants and ecosystems are known, valued, and conserved by society.
 </p>
 </div>
 
-<hr>
-
-<!-- VALUES -->
+<!-- VALORES -->
 <div class="section">
 <h2>Values</h2>
 
-<div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; margin-top:15px;">
-
-<div>🌱 Scientific rigor</div>
-<div>🔍 Transparency</div>
-<div>🧭 Integrity</div>
-<div>🤝 Inclusion</div>
-<div>🌍 Collaboration</div>
-<div>🌿 Conservation</div>
-<div>🎓 Education</div>
-<div>🏔️ Commitment to the Andes</div>
-
-</div>
+<div class="values">
+  <div class="value-card">🌱 Scientific rigor</div>
+  <div class="value-card">🔍 Transparency</div>
+  <div class="value-card">🧭 Integrity</div>
+  <div class="value-card">🤝 Inclusion</div>
+  <div class="value-card">🌍 Collaboration</div>
+  <div class="value-card">🌿 Conservation</div>
+  <div class="value-card">🎓 Education</div>
+  <div class="value-card">🏔️ Commitment to the Andes</div>
 </div>
 
-<hr>
+</div>
 
-<!-- PHILOSOPHY -->
+<!-- EQUIPO -->
 <div class="section">
-<h2>Our philosophy</h2>
 
-<p>
-We believe knowledge should be accessible to all. Scientific research makes sense when it helps us better understand nature,
-train new generations, and generate real actions for conservation.
-</p>
+<h2>Team</h2>
 
-<p>
-For this reason, we promote science that is accessible, participatory, and deeply committed to biodiversity.
-</p>
+<div class="team">
+
+  <!-- FOTO DEL EQUIPO -->
+  <div>
+    <img src="team.jpg" alt="TIKA Team">
+  </div>
+
+  <!-- TEXTO -->
+  <div class="team-text">
+    TIKA is built by a network of researchers, students, and collaborators committed to the study and conservation of Andean biodiversity.
+    <br><br>
+    Our work connects field exploration, scientific research, and education to generate real conservation impact.
+  </div>
+
+</div>
+
 </div>
 
 </div>
