@@ -1,111 +1,150 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TIKA Biodiversidad</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TIKA Biodiversidad</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f7f5;
-      color: #1f2d1f;
-    }
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7f5;
+    color: #1f2d1f;
+  }
 
-    header {
-      background: #1f4d2e;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+  /* HEADER FIJO */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(31, 77, 46, 0.95);
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+  }
 
-    nav {
-      background: #2e6b3f;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
+  header h1 {
+    margin: 0;
+    font-size: 20px;
+  }
 
-    nav a {
-      color: white;
-      padding: 12px 18px;
-      text-decoration: none;
-      display: inline-block;
-    }
+  nav {
+    margin-top: 5px;
+  }
 
-    nav a:hover {
-      background: #1f4d2e;
-    }
+  nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 14px;
+  }
 
-    .hero {
-      padding: 60px 20px;
-      text-align: center;
-      background: linear-gradient(to bottom, #e8f5e9, #f4f7f5);
-    }
+  nav a:hover {
+    text-decoration: underline;
+  }
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
+  /* HERO */
+  .hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
 
-    section {
-      margin-bottom: 40px;
-    }
+  .hero h2 {
+    font-size: 42px;
+    margin: 0;
+  }
 
-    h2 {
-      color: #1f4d2e;
-      border-left: 5px solid #2e6b3f;
-      padding-left: 10px;
-    }
+  .hero p {
+    font-size: 18px;
+  }
 
-    footer {
-      background: #1f4d2e;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
+  /* CONTENIDO */
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+    margin-top: 80px;
+  }
 
-    .tagline {
-      font-style: italic;
-    }
-  </style>
+  section {
+    margin-bottom: 60px;
+  }
+
+  h2 {
+    color: #1f4d2e;
+    border-left: 5px solid #2e6b3f;
+    padding-left: 10px;
+  }
+
+  /* CARDS */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+  }
+
+  .card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  /* FOOTER */
+  footer {
+    background: #1f4d2e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
 </head>
 
 <body>
 
 <header>
   <h1>🌿 TIKA</h1>
-  <p>Transformando Investigación para Conservar los Andes</p>
-  <p class="tagline">Ciencia para todos</p>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#programas">Programas</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#impacto">Impacto</a>
+    <a href="#ideas">Ideas futuras</a>
+  </nav>
 </header>
 
-<nav>
-  <a href="#inicio">Inicio</a>
-  <a href="#nosotros">Nosotros</a>
-  <a href="#programas">Programas</a>
-  <a href="#proyectos">Proyectos</a>
-  <a href="#ideas">Ideas futuras</a>
-</nav>
-
+<!-- HERO -->
 <div class="hero" id="inicio">
-  <h2>Las plantas sostienen la vida</h2>
-  <p>Conocerlas es el primer paso para conservarlas.</p>
+  <h2>Transformando Investigación para Conservar los Andes</h2>
+  <p>Ciencia para todos</p>
+  <p><strong>Las plantas sostienen la vida. Conocerlas es el primer paso para conservarlas.</strong></p>
 </div>
 
 <div class="container">
 
+<!-- NOSOTROS -->
 <section id="nosotros">
   <h2>¿Quiénes somos?</h2>
   <p>
     TIKA es una organización dedicada a la investigación, educación y conservación de los ecosistemas andinos.
     Promovemos una ciencia accesible para todos.
   </p>
-</section>
 
-<section>
   <h2>Misión</h2>
   <p>Impulsar la investigación, educación y conservación de la flora andina.</p>
 
@@ -113,6 +152,7 @@
   <p>Un futuro donde los Andes sean conocidos y conservados por toda la sociedad.</p>
 </section>
 
+<!-- PROGRAMAS -->
 <section id="programas">
   <h2>Programas</h2>
   <ul>
@@ -123,15 +163,40 @@
   </ul>
 </section>
 
+<!-- PROYECTOS -->
 <section id="proyectos">
   <h2>Proyectos prioritarios</h2>
   <ul>
-    <li>Podocarpaceae Andinas</li>
+    <li>Conservación de Podocarpaceae Andinas</li>
     <li>Flora amenazada de los Andes</li>
     <li>Restauración ecológica</li>
+    <li>Exploraciones botánicas</li>
   </ul>
 </section>
 
+<!-- IMPACTO -->
+<section id="impacto">
+  <h2>🌍 Impacto</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Investigación</h3>
+      <p>Generamos conocimiento científico sobre la flora andina.</p>
+    </div>
+
+    <div class="card">
+      <h3>Educación</h3>
+      <p>Formamos estudiantes y profesionales en botánica.</p>
+    </div>
+
+    <div class="card">
+      <h3>Conservación</h3>
+      <p>Apoyamos la protección de ecosistemas andinos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- IDEAS FUTURAS -->
 <section id="ideas">
   <h2>💡 Ideas futuras</h2>
   <p>
