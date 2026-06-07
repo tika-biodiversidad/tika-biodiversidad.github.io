@@ -8,149 +8,11 @@
 
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <style>
-
-  /* HEADER */
-  header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(10, 30, 18, 0.88);
-    backdrop-filter: blur(12px);
-    z-index: 1000;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-  }
-
-  .header-container {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 12px 20px;
-  }
-
-  nav {
-    margin-left: auto;
-    display: flex;
-    gap: 18px;
-  }
-
-  .logo img {
-    height: 60px;
-  }
-
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    opacity: 0.75;
-    transition: 0.3s;
-  }
-
-  nav a:hover {
-    opacity: 1;
-  }
-
-  /* HERO */
-  .hero {
-    height: 60vh;
-    background-image: url("background2.JPG");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    color: white;
-    padding: 20px;
-  }
-
-  .hero h1 {
-  font-size: 60px;
-  margin-bottom: 10px;
-  letter-spacing: 2px;
-  color: white;
-}
-
-  /* CONTENIDO */
-  .container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 120px 20px 80px;
-    color: #1b2b1b;
-  }
-
-  h1 {
-    color: #1f4d2e;
-    font-size: 45px;
-  }
-
-  h2 {
-    margin-top: 40px;
-    color: #1f4d2e;
-  }
-
-  p {
-    font-size: 18px;
-    line-height: 1.8;
-  }
-
-  /* SECCIONES */
-  .section {
-    margin-top: 25px;
-    padding: 25px;
-    background: white;
-    border-radius: 14px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-  }
-
-  /* VALUES */
-  .values {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 12px;
-  }
-
-  .value-card {
-    background: #f7f9f7;
-    padding: 12px;
-    border-left: 4px solid #2e7d32;
-    border-radius: 10px;
-  }
-
-  /* TEAM */
-  .team {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .team img {
-    width: 100%;
-    max-width: 380px;
-    border-radius: 14px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-  }
-
-  @media (max-width: 768px) {
-    .team {
-      grid-template-columns: 1fr;
-      text-align: center;
-    }
-  }
-
-  </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
+<!-- HEADER (MISMO QUE INDEX) -->
 <header>
   <div class="header-container">
 
@@ -162,16 +24,15 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="programs.html">Programs</a>
-      <a href="impact.html">Impact</a>
-      <a href="projects.html">Projects</a>
       <a href="science.html">Science</a>
-      
+      <a href="projects.html">Projects</a>
+      <a href="impact.html">Impact</a>
     </nav>
 
   </div>
 </header>
 
-<!-- HERO (CORRECTO) -->
+<!-- HERO (USA TU CSS GLOBAL) -->
 <section class="hero about-hero">
   <h1>About TIKA</h1>
 </section>
@@ -179,63 +40,65 @@
 <!-- CONTENT -->
 <div class="container">
 
-<!-- INTRO -->
-<div class="section">
-  <h2>Who we are</h2>
-  <p>
-    TIKA is a scientific initiative dedicated to the study, conservation, and appreciation of Andean plant diversity.
-    We believe science must be accessible to everyone and that knowledge is a fundamental tool for biodiversity conservation.
-  </p>
-  <p>
-    Through research, education, outreach, and technical services, we connect science with society.
-  </p>
-</div>
-
-<!-- MISSION -->
-<div class="section">
-  <h2>Mission</h2>
-  <p>To promote research, education, and conservation of Andean plants and ecosystems.</p>
-</div>
-
-<!-- VISION -->
-<div class="section">
-  <h2>Vision</h2>
-  <p>A future where Andean biodiversity is known, valued, and conserved by society.</p>
-</div>
-
-<!-- VALUES -->
-<div class="section">
-  <h2>Values</h2>
-
-  <div class="values">
-    <div class="value-card">🌱 Scientific rigor</div>
-    <div class="value-card">🔍 Transparency</div>
-    <div class="value-card">🧭 Integrity</div>
-    <div class="value-card">🤝 Inclusion</div>
-    <div class="value-card">🌍 Collaboration</div>
-    <div class="value-card">🌿 Conservation</div>
-    <div class="value-card">🎓 Education</div>
-    <div class="value-card">🏔️ Andes commitment</div>
-  </div>
-
-</div>
-
-<!-- TEAM -->
-<div class="section">
-  <h2>Team</h2>
-
-  <div class="team">
-
-    <img src="team.JPG" alt="TIKA Team">
+  <!-- WHO WE ARE -->
+  <div class="section">
+    <h2>Who we are</h2>
 
     <p>
-      TIKA is built by researchers, students, and collaborators working together for Andean biodiversity conservation.
-      Our work integrates field exploration, scientific research, and education to generate real impact.
+      TIKA is a scientific initiative dedicated to the study, conservation, and appreciation of Andean plant diversity.
+      We believe science must be accessible to everyone and that knowledge is a fundamental tool for biodiversity conservation.
     </p>
+
+    <p>
+      Through research, education, outreach, and technical services, we connect science with society.
+    </p>
+  </div>
+
+  <!-- MISSION -->
+  <div class="section">
+    <h2>Mission</h2>
+    <p>To promote research, education, and conservation of Andean plants and ecosystems.</p>
+  </div>
+
+  <!-- VISION -->
+  <div class="section">
+    <h2>Vision</h2>
+    <p>A future where Andean biodiversity is known, valued, and conserved by society.</p>
+  </div>
+
+  <!-- VALUES -->
+  <div class="section">
+    <h2>Values</h2>
+
+    <div class="values">
+      <div class="value-card">🌱 Scientific rigor</div>
+      <div class="value-card">🔍 Transparency</div>
+      <div class="value-card">🧭 Integrity</div>
+      <div class="value-card">🤝 Inclusion</div>
+      <div class="value-card">🌍 Collaboration</div>
+      <div class="value-card">🌿 Conservation</div>
+      <div class="value-card">🎓 Education</div>
+      <div class="value-card">🏔️ Andes commitment</div>
+    </div>
 
   </div>
 
-</div>
+  <!-- TEAM -->
+  <div class="section">
+    <h2>Team</h2>
+
+    <div class="team">
+
+      <img src="team.JPG" alt="TIKA Team">
+
+      <p>
+        TIKA is built by researchers, students, and collaborators working together for Andean biodiversity conservation.
+        Our work integrates field exploration, scientific research, and education to generate real impact.
+      </p>
+
+    </div>
+
+  </div>
 
 </div>
 
