@@ -93,8 +93,12 @@ h1 {
 
 /* IMÁGENES */
 .block img {
-  width: 70%;
-  max-width: 350px;
+  width: 100%;
+  max-width: 420px;
+
+  height: 280px;        /* 👈 aquí defines el “largo” uniforme */
+  object-fit: cover;    /* 👈 clave: recorta sin deformar */
+
   border-radius: 14px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
   transition: 0.3s;
