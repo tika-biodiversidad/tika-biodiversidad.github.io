@@ -10,7 +10,7 @@ body {
 }
 
 /* =========================
-   HEADER (IGUAL EN TODAS LAS PÁGINAS)
+   HEADER (GLOBAL)
 ========================= */
 
 header {
@@ -31,7 +31,7 @@ header {
 }
 
 .logo img {
-  height: 60px;   /* 🔥 mismo tamaño en todo el sitio */
+  height: 60px;
 }
 
 nav {
@@ -142,7 +142,10 @@ h2 {
   padding-left: 10px;
 }
 
-/* GRID */
+/* =========================
+   GRID / CARDS
+========================= */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -156,7 +159,10 @@ h2 {
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
 }
 
-/* SCIENCE BLOCKS */
+/* =========================
+   SCIENCE BLOCKS
+========================= */
+
 .block {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -177,7 +183,21 @@ h2 {
   border-radius: 14px;
 }
 
-/* FOOTER */
+/* =========================
+   ABOUT - TEAM IMAGE FIX
+========================= */
+
+.team img {
+  width: 100%;
+  max-width: 280px;   /* 🔥 aquí controlas tamaño */
+  height: auto;
+  border-radius: 14px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
 footer {
   background: #0f2a18;
   color: white;
@@ -185,7 +205,10 @@ footer {
   padding: 30px;
 }
 
-/* RESPONSIVE */
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media (max-width: 768px) {
 
   .hero h1 {
