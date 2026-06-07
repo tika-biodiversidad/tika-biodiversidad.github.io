@@ -42,11 +42,33 @@ nav a {
   opacity: 0.85;
 }
 
+/* ================= HERO (NUEVO) ================= */
+.hero {
+  height: 55vh;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+              url("background.JPG");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  color: white;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  letter-spacing: 1px;
+}
+
 /* CONTENIDO */
 .container {
   max-width: 1100px;
   margin: auto;
-  padding: 120px 20px;
+  padding: 80px 20px;
 }
 
 h1 {
@@ -68,7 +90,7 @@ h1 {
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
 }
 
-/* IMÁGENES (MISMO ESTILO QUE TEAM) */
+/* IMÁGENES */
 .block img {
   width: 70%;
   max-width: 350px;
@@ -81,7 +103,6 @@ h1 {
   transform: scale(1.02);
 }
 
-/* TEXTO */
 .block h3 {
   color: #1f4d2e;
   margin-bottom: 10px;
@@ -91,6 +112,7 @@ h1 {
   line-height: 1.7;
 }
 
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .block {
     grid-template-columns: 1fr;
@@ -129,9 +151,13 @@ h1 {
   </div>
 </header>
 
-<div class="container">
+<!-- 🌄 HERO PAISAJE -->
+<section class="hero">
+  <h1>Science & Technical Services</h1>
+</section>
 
-<h1>Science & Services</h1>
+<!-- CONTENT -->
+<div class="container">
 
 <!-- IDENTIFICATION -->
 <div class="block">
