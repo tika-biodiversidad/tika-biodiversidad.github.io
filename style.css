@@ -61,6 +61,7 @@ nav a:hover {
 
 .hero {
   height: 95vh;
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -73,6 +74,21 @@ nav a:hover {
 
   color: white;
   padding: 20px;
+}
+
+/* INDEX */
+.index-hero {
+  background-image: url("background.JPG");
+}
+
+/* SCIENCE */
+.science-hero {
+  background-image: url("background2.JPG");
+}
+
+/* ABOUT */
+.about-hero {
+  background-image: url("background3.JPG");
 }
 
 .hero h1 {
