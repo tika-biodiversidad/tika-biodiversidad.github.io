@@ -89,6 +89,21 @@ nav a:hover {
   background-image: url("background2.JPG");
 }
 
+.programs-hero {
+  height: 60vh;
+  background-image: url("background3.JPG");
+}
+
+.impacts-hero {
+  height: 60vh;
+  background-image: url("background4.JPG");
+}
+
+.projects-hero {
+  height: 60vh;
+  background-image: url("background5.JPG");
+}
+
 /* HERO TEXT */
 .hero h1 {
   font-size: 64px;
