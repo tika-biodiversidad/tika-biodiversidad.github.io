@@ -1,21 +1,27 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Paúl Gonzáles | TIKA</title>
 
 <link rel="stylesheet" href="style.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
 .profile-hero{
 height:100vh;
+
 background:
-linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
+linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
 url("paul-hero.jpg");
+
 background-size:cover;
 background-position:center;
 
@@ -28,62 +34,73 @@ color:white;
 padding:20px;
 }
 
+.profile-photo{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid white;
+margin-bottom:25px;
+box-shadow:0 10px 30px rgba(0,0,0,0.35);
+}
+
 .profile-hero h1{
 font-size:72px;
 margin-bottom:10px;
 color:white;
 }
 
-.profile-hero p{
-font-size:26px;
-max-width:900px;
+.profile-hero .subtitle{
+font-size:24px;
+font-weight:300;
 }
 
 .profile-section{
 max-width:1100px;
 margin:auto;
-padding:90px 20px;
-}
-
-.stat-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-margin-top:40px;
-}
-
-.stat-card{
-background:white;
-padding:25px;
-border-radius:14px;
-text-align:center;
-box-shadow:0 6px 18px rgba(0,0,0,0.08);
-}
-
-.stat-card h3{
-font-size:42px;
-color:#2e7d32;
-margin:0;
-}
-
-.stat-card p{
-margin-top:10px;
+padding:80px 20px;
 }
 
 .quote{
-font-size:32px;
-font-weight:300;
+font-size:34px;
 font-style:italic;
+font-weight:300;
 text-align:center;
 max-width:900px;
 margin:auto;
 color:#1f4d2e;
-padding:80px 20px;
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:50px;
+}
+
+.stat-card{
+background:white;
+padding:35px;
+border-radius:16px;
+text-align:center;
+box-shadow:0 8px 24px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.stat-card:hover{
+transform:translateY(-6px);
+}
+
+.stat-card h3{
+font-size:58px;
+margin:0;
+color:#2e7d32;
 }
 
 .timeline{
 display:grid;
 gap:25px;
+margin-top:30px;
 }
 
 .timeline-item{
@@ -100,61 +117,48 @@ color:#1f4d2e;
 
 .socials{
 display:flex;
-gap:15px;
 flex-wrap:wrap;
+gap:15px;
 margin-top:30px;
 }
 
 .socials a{
-text-decoration:none;
 background:#2e7d32;
 color:white;
-padding:12px 18px;
+padding:12px 20px;
 border-radius:25px;
+text-decoration:none;
+}
+
+.socials a:hover{
+opacity:0.9;
+}
+
+@media(max-width:768px){
+
+.profile-photo{
+width:160px;
+height:160px;
+}
+
+.profile-hero h1{
+font-size:42px;
+}
+
+.quote{
+font-size:24px;
+}
+
 }
 
 </style>
+
 </head>
 
-<script>
-
-const counters = document.querySelectorAll('.counter');
-
-counters.forEach(counter => {
-
-const updateCounter = () => {
-
-const target = +counter.getAttribute('data-target');
-const count = +counter.innerText;
-
-const increment = target / 120;
-
-if(count < target){
-
-counter.innerText = Math.ceil(count + increment);
-
-setTimeout(updateCounter,15);
-
-}else{
-
-counter.innerText =
-target >= 1000
-? target.toLocaleString() + "+"
-: target + "+";
-
-}
-
-};
-
-updateCounter();
-
-});
-
-</script>
-  
 <body>
 
 <header>
+
 <div class="header-container">
 
 <div class="logo">
@@ -168,15 +172,18 @@ updateCounter();
 </nav>
 
 </div>
+
 </header>
 
 <section class="profile-hero">
 
 <div>
 
+<img src="paul.jpg" class="profile-photo" alt="Paúl Gonzáles">
+
 <h1>Paúl Gonzáles</h1>
 
-<p>
+<p class="subtitle">
 Botanist • Explorer • Conservation Scientist • Science Communicator
 </p>
 
@@ -191,16 +198,16 @@ Exploring plant life at the limits of survival in the Andes
 <section class="profile-section">
 
 <div class="quote">
-
 “Where plants cannot move, the planet reveals its limits.”
-
 </div>
+
+</section>
+
+<section class="profile-section">
 
 <h2>Scientific Impact</h2>
 
-<div class="stat-grid">
-
-<div class="stat-grid">
+<div class="stats-grid">
 
 <div class="stat-card">
 <h3 class="counter" data-target="14000">0</h3>
@@ -209,7 +216,7 @@ Exploring plant life at the limits of survival in the Andes
 
 <div class="stat-card">
 <h3 class="counter" data-target="10000">0</h3>
-<p>Georeferenced photographs</p>
+<p>Georeferenced plant photographs</p>
 </div>
 
 <div class="stat-card">
@@ -232,7 +239,7 @@ Exploring plant life at the limits of survival in the Andes
 
 <p>
 
-Field research across high-Andean puna, cloud forests, dry forests, coastal lomas and glacial environments. My work combines plant collection, ecological observation, biodiversity monitoring and scientific storytelling.
+Field research across high-Andean puna, glacial landscapes, cloud forests, dry forests and coastal lomas. My work combines specimen collection, ecological observation, biodiversity monitoring and scientific storytelling.
 
 </p>
 
@@ -244,9 +251,7 @@ Field research across high-Andean puna, cloud forests, dry forests, coastal loma
 
 <p>
 
-Specialist in Neotropical plant systematics with particular interest in Asteraceae, Solanaceae, Brassicaceae, Malvaceae, Violaceae and Amaryllidaceae.
-
-Research integrates morphology, distribution modelling, herbarium studies and conservation assessments.
+Specialist in Neotropical plant systematics with particular interest in Asteraceae, Solanaceae, Brassicaceae, Malvaceae, Violaceae and Amaryllidaceae. Research integrates morphology, herbarium studies, distribution modelling and conservation assessments.
 
 </p>
 
@@ -288,7 +293,7 @@ Research integrates morphology, distribution modelling, herbarium studies and co
 
 <p>
 
-University lecturer, field instructor, international speaker, author of <em>Miradas</em> and <em>Huellas en los Andes</em>, and creator of science communication content focused on Andean biodiversity.
+University lecturer, field instructor, international speaker, author of Miradas and Huellas en los Andes, and creator of science communication content focused on Andean biodiversity.
 
 </p>
 
@@ -318,5 +323,43 @@ University lecturer, field instructor, international speaker, author of <em>Mira
 
 </footer>
 
+<script>
+
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+
+const updateCounter = () => {
+
+const target = +counter.getAttribute('data-target');
+
+const count = +counter.innerText;
+
+const increment = target / 120;
+
+if(count < target){
+
+counter.innerText = Math.ceil(count + increment);
+
+setTimeout(updateCounter,15);
+
+}else{
+
+counter.innerText =
+target >= 1000
+? target.toLocaleString() + "+"
+: target + "+";
+
+}
+
+};
+
+updateCounter();
+
+});
+
+</script>
+
 </body>
 </html>
+```
