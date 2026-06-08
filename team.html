@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +7,68 @@
 <title>Team | TIKA</title>
 
 <link rel="stylesheet" href="style.css">
-
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+.team-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:25px;
+}
+
+.member-card{
+  background:white;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 8px 22px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.member-card:hover{
+  transform:translateY(-5px);
+}
+
+.member-card img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+}
+
+.member-info{
+  padding:20px;
+}
+
+.member-info h3{
+  margin:0;
+  color:#1f4d2e;
+}
+
+.position{
+  color:#2e7d32;
+  font-weight:600;
+  margin:8px 0 15px;
+}
+
+.hero-team{
+  height:60vh;
+  background-image:url("background2.JPG");
+  background-size:cover;
+  background-position:center;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.section-title p{
+  max-width:700px;
+  margin:auto;
+}
+
+</style>
+
 </head>
 
 <body>
@@ -33,22 +92,144 @@
   </div>
 </header>
 
-<section class="hero about-hero">
-  <h1>Our Team</h1>
+<section class="hero hero-team">
+  <h1>People of TIKA</h1>
 </section>
 
 <div class="container">
 
-  <div class="card">
-    <img src="paul.jpg" alt="Paúl Gonzáles" width="250">
+<div class="section-title">
+<h2>Meet the People Behind TIKA</h2>
 
-    <h3>Paúl Gonzáles</h3>
+<p>
+Researchers, educators, students and collaborators working together to advance knowledge and conservation of Andean biodiversity.
+</p>
 
-    <p>
-      Founder and Director of TIKA.
-      Botanist specialized in Andean flora, taxonomy and plant conservation.
-    </p>
-  </div>
+</div>
+
+<div class="team-grid">
+
+<!-- 1 -->
+<div class="member-card">
+<img src="director.jpg" alt="">
+<div class="member-info">
+<h3>Paúl Gonzáles</h3>
+<div class="position">Founder & Director</div>
+<p>Botanist specialized in Andean flora, taxonomy and conservation.</p>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="member-card">
+<img src="member2.jpg" alt="">
+<div class="member-info">
+<h3>Name</h3>
+<div class="position">Program Coordinator</div>
+<p>Short biography.</p>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="member-card">
+<img src="member3.jpg" alt="">
+<div class="member-info">
+<h3>Name</h3>
+<div class="position">Research Associate</div>
+<p>Short biography.</p>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="member-card">
+<img src="member4.jpg" alt="">
+<div class="member-info">
+<h3>Name</h3>
+<div class="position">Research Associate</div>
+<p>Short biography.</p>
+</div>
+</div>
+
+<!-- 5 -->
+<div class="member-card">
+<img src="member5.jpg" alt="">
+<div class="member-info">
+<h3>Name</h3>
+<div class="position">Research Associate</div>
+<p>Short biography.</p>
+</div>
+</div>
+
+<!-- 6 -->
+<div class="member-card">
+<img src="member6.jpg" alt="">
+<div class="member-info">
+<h3>Name</h3>
+<div class="position">Research Associate</div>
+<p>Short biography.</p>
+</div>
+</div>
+
+<!-- 7 -->
+<div class="member-card">
+<img src="member7.jpg" alt="">
+<div class="member-info">
+<h3>Name</h3>
+<div class="position">Research Associate</div>
+<p>Short biography.</p>
+</div>
+</div>
+
+<!-- 8 -->
+<div class="member-card">
+<img src="member8.jpg" alt="">
+<div class="member-info">
+<h3>Name</h3>
+<div class="position">Research Associate</div>
+<p>Short biography.</p>
+</div>
+</div>
+
+<!-- 9 -->
+<div class="member-card">
+<img src="member9.jpg" alt="">
+<div class="member-info">
+<h3>Name</h3>
+<div class="position">Student Researcher</div>
+<p>Short biography.</p>
+</div>
+</div>
+
+<!-- 10 -->
+<div class="member-card">
+<img src="member10.jpg" alt="">
+<div class="member-info">
+<h3>Name</h3>
+<div class="position">Student Researcher</div>
+<p>Short biography.</p>
+</div>
+</div>
+
+<!-- 11 -->
+<div class="member-card">
+<img src="member11.jpg" alt="">
+<div class="member-info">
+<h3>Name</h3>
+<div class="position">Student Researcher</div>
+<p>Short biography.</p>
+</div>
+</div>
+
+<!-- 12 -->
+<div class="member-card">
+<img src="member12.jpg" alt="">
+<div class="member-info">
+<h3>Name</h3>
+<div class="position">Collaborator</div>
+<p>Short biography.</p>
+</div>
+</div>
+
+</div>
 
 </div>
 
