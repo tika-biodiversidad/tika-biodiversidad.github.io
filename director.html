@@ -116,6 +116,42 @@ border-radius:25px;
 </style>
 </head>
 
+<script>
+
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+
+const updateCounter = () => {
+
+const target = +counter.getAttribute('data-target');
+const count = +counter.innerText;
+
+const increment = target / 120;
+
+if(count < target){
+
+counter.innerText = Math.ceil(count + increment);
+
+setTimeout(updateCounter,15);
+
+}else{
+
+counter.innerText =
+target >= 1000
+? target.toLocaleString() + "+"
+: target + "+";
+
+}
+
+};
+
+updateCounter();
+
+});
+
+</script>
+  
 <body>
 
 <header>
@@ -164,23 +200,25 @@ Exploring plant life at the limits of survival in the Andes
 
 <div class="stat-grid">
 
+<div class="stat-grid">
+
 <div class="stat-card">
-<h3>14,000+</h3>
+<h3 class="counter" data-target="14000">0</h3>
 <p>Herbarium specimens collected</p>
 </div>
 
 <div class="stat-card">
-<h3>10,000+</h3>
+<h3 class="counter" data-target="10000">0</h3>
 <p>Georeferenced photographs</p>
 </div>
 
 <div class="stat-card">
-<h3>20+</h3>
+<h3 class="counter" data-target="20">0</h3>
 <p>Species new to science</p>
 </div>
 
 <div class="stat-card">
-<h3>60+</h3>
+<h3 class="counter" data-target="60">0</h3>
 <p>Scientific publications</p>
 </div>
 
